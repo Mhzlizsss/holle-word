@@ -1,0 +1,83 @@
+.jlsoft-toolbar {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    padding: 12px 0 0 12px;
+    z-index: 1000000;
+}
+
+.jlsoft-drag-handle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    height: 14px;
+    width: 14px;
+    background: url('chrome-extension://__MSG_@@extension_id__/images/drag.png') left top no-repeat transparent;
+    cursor: pointer;
+}
+
+.jlsoft-drag-handle-show {
+    display: block;
+}
+
+.jlsoft-toolbar:hover .jlsoft-drag-handle {
+    display: block;
+}
+
+.jlsoft-content {
+    border: 1px solid #dcdcdc;
+    box-shadow: 2px 3px 2px #ccc;
+}
+
+.jlsoft-toolbar a {
+    color: #0088cc;
+    text-decoration: none;
+}
+
+.jlsoft-toolbar a:hover {
+    color: #005580;
+    text-decoration: underline;
+}
+
+.jlsoft-toolbar .jlsoft-import-trigger {
+    font-size: 14px;
+    font-weight: normal;
+    background: url('chrome-extension://__MSG_@@extension_id__/images/plugin_download.png') 10px center no-repeat #2c87b3;
+    color: white;
+    padding-left: 40px;
+    padding-right: 10px;
+    line-height: 30px;
+    display: block;
+}
+
+.jlsoft-toolbar .jlsoft-import-trigger:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #800080;
+}
+
+.jlsoft-toolbar .jlsoft-check-result {
+    background: #fff;
+}
+
+.jlsoft-toolbar .jlsoft-check-result .jlsoft-heading {
+    text-align: center;
+    line-height: 25px;
+    border-bottom: 1px solid #dcdcdc;
+    font-size: 12px;
+}
+
+.jlsoft-exist {
+    color: red;
+}
+
+.jlsoft-noexist {
+    color: #777;
+}
+
+.jlsoft-toolbar .jlsoft-check-result .jlsoft-info {
+    padding: 0 5px;
+    line-height: 20px;
+    font-size: 12px;
+}
